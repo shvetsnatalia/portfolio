@@ -1,0 +1,471 @@
+* {
+    box-sizing: border-box;
+  }
+body, footer, .navbar, .seeSite, .textContainer, .contentInsideBottom{
+    margin: 0;
+}
+#linkedin {
+    fill:#C2A4F7
+}
+#contact {
+    fill:#0B76BF
+}
+#projects {
+    fill:#3A9823
+}
+#about {
+    fill:#FFA0D3
+}
+
+#instagram {
+    fill: #FFD233;
+}
+body {
+    background-color: #0C0B22;
+    display: block;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+.mainPageMax500 {
+    display: none;
+}
+.greeting {
+    background-color: #FF8259;
+    text-transform:uppercase;
+    font-size: 3vh;
+    width: 100%;
+    margin-bottom: 40px;
+}
+h1{
+    margin-top: 0;
+    padding: 40px;
+    font-family: 'Paytone One', sans-serif;
+    
+}
+
+.greetingTextHighlight {
+    color :#ffffff
+}
+
+
+.navigation {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    
+}
+
+.blockOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:1;
+}
+.blockTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:1;
+} 
+.blockThree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+}
+.btn {
+    border: none;
+    width: 100%;
+    background-color: #0C0B22;
+}
+.btnVector {
+    cursor: pointer;
+    width: 90%;
+    height: auto;
+}
+.about, .contact {
+    margin-bottom: 60px;
+}
+
+footer {
+    color: #FFFFFF;
+    font-family: 'Jua', sans-serif;
+    width: 100%;
+    text-align: end;
+    align-self: flex-end;
+}
+
+.footerText {
+    margin: 40px;
+    font-size: 1.5vh;
+}
+
+.footerLink {
+    color: #FFFFFF;
+    text-decoration:underline;
+    text-transform: none;
+}
+.footerLink:hover {
+    cursor: pointer;
+}
+.footerLinkContact:hover {
+    color: #FFD233;
+}
+.footerLinkAbout:hover {
+    color:#0B76BF
+}
+.footerLinkProjects:hover {
+    color:#FFA0D3
+}
+/* NAVBAR */
+
+.projectsBG{
+    background-color: #3A9823;
+}
+.aboutBG {
+    background-color: #FFA0D3;;
+}
+.contactBG {
+    background-color: #0B76BF;
+}
+.projectsBG .navOption:hover {
+    text-decoration: underline #FFA0D3 2px;
+    text-underline-offset: 2px;
+}
+.aboutBG a:hover,button:hover {
+    text-decoration: underline #0B76BF 2px;
+    text-underline-offset: 2px;
+}
+
+.contactBG a:hover {
+    text-decoration: underline #FFD233 2px;
+    text-underline-offset: 2px;
+}
+
+.navbar {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:2px;
+    background-color: #0C0B22;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #0C0B22;
+    
+}
+.navHome,.navOptions, .navSocial{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+
+.navOptions {
+    flex: grid;
+    grid-column: span 2;
+    text-transform: uppercase;
+    gap: 30px;
+    
+}
+
+.navOption, .projectLink,.aboutContainer,.aboutMySkillsContainer,.aboutBottomContainer,.contactContainer {
+    text-decoration: none;
+    color: #0C0B22;
+    font-size: 16px;
+    font-family: 'Jua', sans-serif;
+}
+.navSocial { 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.logo {
+    width: 170PX;
+    height: auto;
+}
+.logo:hover {
+rotate: 180deg;
+}
+.logo:active {
+    rotate: 180deg;
+}
+.instagramIcon,.linkedinIcon {
+    width: 30px;
+    height: auto;
+}
+.pageDescription {
+    width: 100%;
+    color: #FFFFFF;
+    text-transform:uppercase;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    height: 1;
+    
+}
+.descriptionText {
+    width: 95%;
+}
+/* PROJECTS */
+
+.projectsContainer {
+    display: grid;
+    grid-column: 3;
+    grid-template-columns: repeat(3,1fr);
+    gap:2px;
+    background-color: #0C0B22;
+    
+}
+
+.projectBlock {
+    padding: 30px;
+    text-align: center;
+}
+.projectPic:hover {
+    scale: 1.1;
+}
+.projectPic {
+    width: 95%;
+}
+.seeSite{
+    text-decoration:underline;
+
+}
+
+/* ABOUT */
+.aboutContainer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2px;
+    margin-bottom: 40px;
+}
+.aboutImg {
+    background-image: url(https://cdn.glitch.global/4b5fbab2-b07e-4038-a8d4-02d66b0f72da/2CB31390-17D1-47EE-9B43-404BE087984A.JPG?v=1676074914103);
+    background-position: center;
+    background-size: cover;
+    text-transform: none;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    
+}
+.aboutText {
+    padding: 40px;
+}
+
+.aboutMySkillsContainer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2px;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+.mySkills,.aboutBottomContainerText {
+    grid-column: span 2;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+.aboutBottomContainer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:2px;
+    
+}
+.aboutBottomContainerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.balloonSVG{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    opacity: 0;
+}
+
+.balloon {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+}
+
+#balloonBtn {
+    background: none;
+    border: none;
+}
+/* CONTACT */
+
+.mailto {
+    color: #FFD233
+}
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+label {
+    margin: 10px;
+}
+input, textarea, .contactBTN{
+    margin-bottom: 10px;
+    width: 300px;
+    border: none;
+    padding: 10px;
+    font-family: 'Jua', sans-serif;
+}
+
+textarea {
+    height: 200px;
+}
+
+.contactBTN {
+    width: 150px;
+    border: 2px solid #FFD233;
+    background: none;
+    color: #FFD233;
+}
+.contactBTN:hover {
+    border: 2px solid #FFD233;
+    background-color: #FFD233;
+    color: #0B76BF;
+}
+.contactBTN:active {
+    border: 2px solid #FFD233;
+    background-color: #FFD233;
+    color: #0B76BF;
+}
+@media all and (max-width:950px){
+    .greeting,.pageDescription {
+        font-size: 2vh;
+    }
+    h1 {
+        padding: 20px;
+        
+    }
+    .projectsContainer {
+        grid-column: 2;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media all and (max-width:750px){
+    .navOption,.projectLink,.aboutContainer,.aboutMySkillsContainer,.aboutBottomContainer,.contactContainer {
+        font-size: 14px;
+    }
+    .greeting,.pageDescription {
+        font-size: 1.5vh;
+    }
+    h1 {
+        padding: 20px;
+        
+    }
+    .projectsContainer {
+        grid-column: 1;
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        grid-column: 1;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .navOptions {
+        grid-row: 2;
+        grid-column: 1/-1;
+        
+    }
+
+    .navHome,.navSocial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .logo {
+        width: 100PX;
+        height: auto;
+    }
+
+    .instagramIcon,.linkedinIcon {
+        width: 20px;
+        height: auto;
+    }
+    .footerMain, footer {
+        text-align: center;
+    }
+}
+@media all and (max-width:500px){
+
+    .greeting,.navigation, .footerMain {
+        display: none;
+    }
+
+    .mainPageMax500 {
+        display: grid;
+        grid-template-rows: repeat(8,1fr);
+        gap: 2px;
+
+    }
+    .greetingMax500  {
+        color: #FF8259;
+        text-transform: uppercase;
+        grid-row: span 2;
+    }
+    .instagramBG {
+        background-color: #FFD233;
+    }
+    .linkedinBG {
+        background-color: #C2A4F7;
+    }
+    .navigation500MaxOption {
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #0C0B22;
+    }
+    .navigation500MaxOption:active {
+        filter:brightness(80%)
+    }
+    .navigation500MaxOption:active h2{
+        scale: 0.8;
+    }
+
+    h1,h2 {
+        padding-left: 10px;
+    }
+
+    h2{
+        font-family: 'Jua', sans-serif;
+    }
+
+    .footerText500 {
+        text-align: start;
+        margin-left: 10px;
+    }
+    .aboutContainer {
+        display: grid;
+        grid-row: -2;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .aboutContainer .aboutImg {
+        grid-row: 1;
+
+    }
+    .aboutText, .contactContainer {
+        padding: 10px;
+    }
+    .projectLink {
+        text-align: center;
+    }
+}
